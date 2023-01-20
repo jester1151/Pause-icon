@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(8, 2, 44);
+}
+.main {
+  width: 150px;
+  height: 150px;
+  margin: 240px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 80px;
+  box-shadow: 10px 5px 60px 15px #7494be;
+  animation: alternate;
+  animation-duration: 0.3s;
+  animation: animate 2.2s linear infinite;
+  animation-name: main;
+}
+img {
+  width: 60px;
+  height: 60px;
+  padding-left: 10px;
+}
+@keyframes main {
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
